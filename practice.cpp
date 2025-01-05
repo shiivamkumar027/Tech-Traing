@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
-int main() {
-    int a,b,c;
-   cout<<"Enter a"<<endl;
-    cin>>a;
-    cout<<"Enter b"<<endl;
-    cin>>b;
-    cout<<"Enter c"<<endl;
-    cin>>c; 
-    cout<<a+b+c<<endl;   
-    return 0;
+int main(){
+
+for(int i=0;i<=15;i+=2)
+{
+cout<<i<<" ";
+if(i&1){
+    continue;
+}
+i++;
+}
 }
