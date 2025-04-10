@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int powerMod(int base,int exponent, int modulus) {
+   int result = 1;
+    base = base % modulus;
+    while (exponent > 0) {
+        if (exponent % 2 == 1)
+        result = (result * base) % modulus;
+        exponent = exponent >> 1;
+        base = (base * base) % modulus;
+    }
+    return result;
+}
+int main() {
+   int modulus=1e9+7;
+    int base = 2;
+    int exponent =9;
+     int result = powerMod(base%modulus, exponent, modulus)%modulus;
+    cout << "Result: " << result << endl; // Output: 4
+    return 0;
+}
