@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int low=0;
+    int high=1;
+    cout<<low<<" "<<high<<" ";
+    for(int i=2;i<=n;i++){
+        int fib=low+high;
+        low=high;
+        high=fib;
+        cout<<fib<<" ";
+    }
+        int a,b;
+        cin>>a>>b;
+        int c=abs(a%b);
+        cout<<c<<endl;
+        return 0;
+}
