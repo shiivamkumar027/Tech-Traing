@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int mod = 1e9+7;
+int main() {
+   int n;
+   cin>>n;
+   int ans=1;
+   for(int i=1;i<=n;i++){
+     ans=(ans*i)%mod;
+   }
+   cout<<ans<<endl;
+   int no=1e9;
+   int no2=2e9;
+   int sum=(no%mod+no2%mod)%mod;
+   cout<<sum<<endl;
+    return 0;
+}
